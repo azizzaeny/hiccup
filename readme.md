@@ -11,7 +11,8 @@ Simple UI building with hiccup
 
 ### Getting started 
 (status: work in progress)  
-**in browser** global vars 
+
+**in browser**  
 
 ```js
 <script src="https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.js"></script>
@@ -52,3 +53,6 @@ render(container, hnode)
 toHiccup(str)
 toString(hnode) 
 ```
+
+### Related work
+- [composable](https://github.com/azizzaeny/composable/tree/main)
