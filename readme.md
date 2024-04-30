@@ -1,8 +1,9 @@
 ## @zaeny/hiccup
 
-> UI building with simple vdom in hiccup     
+> VDOM in hiccup
 
-Provide simple vdom manipulation with array  
+Simple UI building with hiccup      
+
 
 - [Geting Started](#getting-started)
 - [Usage](#usage)
