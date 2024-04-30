@@ -55,4 +55,4 @@ toString(hnode)
 ```
 
 ### Related work
-- [composable](https://github.com/azizzaeny/composable/tree/main)
+- [Composable](https://github.com/azizzaeny/composable/tree/main) - Collection of functions to solve programming problem
