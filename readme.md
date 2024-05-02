@@ -30,7 +30,7 @@ var {render, toHiccup, toString} = require('@zaeny/hiccup');
 ```html
 <script src="https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.js"></script>
 ```
-**in browser es5 global vars**   `render`, `toHiccup` `toString` available to use in window
+**in browser es5 global vars** 
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.def.js"></script>
