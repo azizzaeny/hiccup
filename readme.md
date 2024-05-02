@@ -26,6 +26,10 @@ npm i @zaeny/hiccup
 var {render, toHiccup, toString} = require('@zaeny/hiccup');
 ```
 
+note please use your favorite cdn
+- unpkg -`https://www.unpkg.com/@zaeny/hiccup@1.0.2/dist/index.js`
+- jsdelivr - `https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.js`
+
 **in browser common js**
 ```html
 <script src="https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.js"></script>
