@@ -1,0 +1,30 @@
+{
+  "name": "@zaeny/hiccup",
+  "version": "1.0.2",
+  "description": "VDOM representation in hiccup, Simple UI building with hiccup tree",
+  "keywords": [
+    "functional rendering",
+    "hiccup",
+    "hdom",
+    "regent",
+    "nested data structure",
+    "vdom",
+    "dom",
+    "react",
+    "tree"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azizzaeny/hiccup.git"
+  },
+  "author": "azizzaeny",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/azizzaeny/hiccup/issues"
+  },
+  "homepage": "https://github.com/azizzaeny/hiccup#readme"
+}

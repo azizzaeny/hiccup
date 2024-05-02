@@ -105,9 +105,3 @@ var toHiccup = (htmlString) => {
   const root = doc.body.firstChild;
   return parseNode(root);
 }
-
-module.exports = {
-  render,
-  toHiccup,
-  toString
-}
