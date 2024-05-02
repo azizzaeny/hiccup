@@ -13,7 +13,7 @@ Simple UI building with hiccup nested data structure
 - [Usage](#usage)
 - [API](#api)
 - [Related work](#related-work)
-- [Changes](#change)
+- [Changes](#changes)
 
 ### Getting started 
 
@@ -28,7 +28,7 @@ var {render, toHiccup, toString} = require('@zaeny/hiccup');
 
 note please use your favorite cdn
 - unpkg -`https://www.unpkg.com/@zaeny/hiccup@1.0.2/dist/index.js`
-- jsdelivr - `https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.js`
+- jsdelivr - `https://fastly.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.js`
 
 **in browser common js**
 ```html
@@ -94,4 +94,4 @@ toString(hnode)
 - [1.0.0] add `createElement`, `render`, `toHiccup`
 - [1.0.1] add `svg` rendering in renderNode
 - [1.0.2] add `toString` to render html string
-
+- [1.0.3] seperate `toString` to its own file
