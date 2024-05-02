@@ -17,58 +17,62 @@ Simple UI building with hiccup nested data structure
 
 ### Getting started 
 
-**npm**
+**npm common js**
 
 ```shell 
 npm i @zaeny/hiccup
 ```
-then 
-
 ```js
 var {render, toHiccup, toString} = require('@zaeny/hiccup');
+```
 
+**in browser common js**
+```html
+<script src="https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.js"></script>
+```
+**in browser es5 global vars**   `render`, `toHiccup` `toString` available to use in window
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.def.js"></script>
+```
+
+**in browser es6**
+```html
+<script type="module" src="https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.es6.js"></script>
+```
+**in browser es6 import**
+```js
+import {render, toHiccup, toString} from 'https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.es6.js';
+```
+**browser es6 import function**
+
+```js
+
+var assignVar = (global) => res => Object.assign(global, { hiccup: res.default });
+import("https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.es6.js").then(assignVar(window));
+```
+
+### usage
+
+```js
+
+var component = (props) => (["div", "container", ["div", {class: "w-10"}, "look iam hiccup"]]);
+
+// render(<<hiccup>>, <<elementContainer>>
+render(component(), document.body );
+
+// more children example
 render(
-  ["div", {class: "container"}, 
+  ["div", {class: "container"},
    ["p", {class: "leading"}, "Hi"],
    ["p", {}, "my name is hiccup"]
   ],
   document.body
 );
 
-// render(<<hiccup>>, <<elementContainer>>
-```
-
-**in browser**  
-
-```js
-<script src="https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.js"></script>
-```
-
-**in browser es6**
-```html
-<script src="https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.es6.js"></script>
-```
-or  in browser es6 
-
-```js
-var deps = {
-  hiccup : "https://cdn.jsdelivr.net/gh/azizzaeny/hiccup@main/dist/index.es6.js",
-}
-
-var assignVar = (global) => res => Object.assign(global, res.default );
-import(deps.hiccup).then(assignVar(window));
-```
-
-### usage
-
-```js
-var component = (props) => (["div", "container", ["div", {class: "w-10"}, "look iam hiccup"]];
-
-render(component(), document.body );
-
 toHiccup('<div>hai</div>'); // ["div", {}, "hai"]
 toString(["div", {class: "foo bar"}, ["div", {}, "hail"]]); // <div class="foo bar"><div>hail</div></div>
- 
+
 ```
 
 ### Api
